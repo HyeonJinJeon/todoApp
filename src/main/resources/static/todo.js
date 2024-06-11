@@ -4,7 +4,7 @@ let basicDatas = [];
 
 function getTodos(){
     const xhr = new XMLHttpRequest();
-    xhr.open("get","http://localhost:8080/api/todos");
+    xhr.open("get","http://13.125.1.48/:8080/api/todos");
     xhr.onreadystatechange = function(){
         if(xhr.readyState === 4 ){
             if(xhr.status === 200){
